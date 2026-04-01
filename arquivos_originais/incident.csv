@@ -1,0 +1,61 @@
+"number","short_description","cmdb_ci","opened_at","work_notes","sys_created_by","state","caller_id","priority","category","assignment_group","assigned_to","sys_updated_on","sys_updated_by","closed_by","sys_tags","sys_id"
+"INC1433649","ABEND DS - BS - SUSTENTACAO - BVP - SISE-SP - JOB PP_SISE5000_M","PP_SISE5000_M","01/04/2026 05:38:02","01/04/2026 14:52:38 - IVAN APARECIDO AUGUSTINELI (Anotações de trabalho)
+Erro no envio ISD do arquivo, ao Gerar arquivo de Agenciamento de Apólices Massificados.
+
+01/04/2026 05:38:02 - System (Anotações de trabalho)
+Task is created by System Administrator , using  ""[code]<u><a href=""em_alert_management_rule.do?sys_id=45f74e2a8786f5544340c9530cbb3541"" target=""_blank"">BRAD - Correlation - Auto Incident - IWS</a></u>[/code]"" Alert Rule.
+
+","system","Em andamento","IWS Processamento","4 - Baixo(a)","Processamento","DS - BS - SUSTENTACAO - BVP - SISE-SP","DIOGO DA FRANCA RODRIGUES","01/04/2026 14:52:38","M69257","","AguardaAnalistaVIDA, SISTRAN, SitEmAtendimento","8e64dd6447c883dca3787730f26d43aa"
+"INC1433611","ABEND DS - BS - SUSTENTACAO - BVP - SISE-SP - JOB PP_SISE1115_D","PP_SISE1115_D","01/04/2026 04:07:43","01/04/2026 14:45:07 - IVAN APARECIDO AUGUSTINELI (Anotações de trabalho)
+Não foi selecionado nenhum dado do arquivo. Arquivo sem movimento. Apenas HEADER/TRAILLER.
+
+01/04/2026 04:07:43 - System (Anotações de trabalho)
+Task is created by System Administrator , using  ""[code]<u><a href=""em_alert_management_rule.do?sys_id=45f74e2a8786f5544340c9530cbb3541"" target=""_blank"">BRAD - Correlation - Auto Incident - IWS</a></u>[/code]"" Alert Rule.
+
+","system","Em andamento","IWS Processamento","4 - Baixo(a)","Processamento","DS - BS - SUSTENTACAO - BVP - SISE-SP","DIOGO DA FRANCA RODRIGUES","01/04/2026 14:45:07","M69257","","AguardaAnalistaVIDA, SISTRAN, SitEmAtendimento","4fbff064fb88c79c063cf6885eefdc48"
+"INC1433478","ABEND DS - BS - SUSTENTACAO - BVP - SISE-SP - JOB PP_SISE1035_D","PP_SISE1035_D","31/03/2026 22:25:29","01/04/2026 14:34:32 - IVAN APARECIDO AUGUSTINELI (Anotações de trabalho)
+Erro de violação de PK.
+A pasta contém dois arquivos, e isso pode gerar este problema. O correto é processar um arquivo por vez.
+
+31/03/2026 22:25:29 - System (Anotações de trabalho)
+Task is created by System Administrator , using  ""[code]<u><a href=""em_alert_management_rule.do?sys_id=45f74e2a8786f5544340c9530cbb3541"" target=""_blank"">BRAD - Correlation - Auto Incident - IWS</a></u>[/code]"" Alert Rule.
+
+","system","Em andamento","IWS Processamento","4 - Baixo(a)","Processamento","DS - BS - SUSTENTACAO - BVP - SISE-SP","ANDRE ANDRADE ALEXANDRE ROCHA","01/04/2026 14:34:32","M69257","","AguardaAnalistaVIDA, SISTRAN, SitEmAtendimento","f96177588708871c5be786270cbb351d"
+"INC1433363","ABEND DS - BS - SUSTENTACAO - BVP - SISE-SP - JOB PP_SISE1001_D","PP_SISE1001_D","31/03/2026 18:29:54","01/04/2026 14:27:46 - IVAN APARECIDO AUGUSTINELI (Anotações de trabalho)
+Em atendimento por LEANDRO ALEXANDRINO DE SOUZA (SISTRAN) em 01/04/2026 08:00:00
+
+31/03/2026 18:29:54 - System (Anotações de trabalho)
+Task is created by System Administrator , using  ""[code]<u><a href=""em_alert_management_rule.do?sys_id=45f74e2a8786f5544340c9530cbb3541"" target=""_blank"">BRAD - Correlation - Auto Incident - IWS</a></u>[/code]"" Alert Rule.
+
+","system","Em andamento","IWS Processamento","4 - Baixo(a)","Processamento","DS - BS - SUSTENTACAO - BVP - SISE-SP","DIOGO DA FRANCA RODRIGUES","01/04/2026 14:27:46","M69257","","SISTRAN, SitEmAtendimento","f67b3e5097c0875c0979b4c6f053afe1"
+"INC1433314","ABEND DS - BS - SUSTENTACAO - BVP - SISE-SP - JOB PP_FW1033_D","PP_FW1033_D","31/03/2026 17:32:52","01/04/2026 14:37:26 - IVAN APARECIDO AUGUSTINELI (Anotações de trabalho)
+Falta do arquivo para processamento.
+
+31/03/2026 17:32:52 - System (Anotações de trabalho)
+Task is created by System Administrator , using  ""[code]<u><a href=""em_alert_management_rule.do?sys_id=45f74e2a8786f5544340c9530cbb3541"" target=""_blank"">BRAD - Correlation - Auto Incident - IWS</a></u>[/code]"" Alert Rule.
+
+","system","Em andamento","IWS Processamento","4 - Baixo(a)","Processamento","DS - BS - SUSTENTACAO - BVP - SISE-SP","DIOGO DA FRANCA RODRIGUES","01/04/2026 14:37:26","M69257","","AguardaAnalistaVIDA, SISTRAN, SitEmAtendimento","276ee6543b40035c5e901337f4e45a51"
+"INC1432174","ABEND DS - BS - SUSTENTACAO - BVP - SISE-SP - JOB PP_SISE1035_D","PP_SISE1035_D","31/03/2026 01:21:52","31/03/2026 19:01:26 - JULIO CESAR SILVA (Anotações de trabalho)
+ajustando impacto
+
+31/03/2026 19:01:00 - JULIO CESAR SILVA (Anotações de trabalho)
+ajustar impacto
+
+31/03/2026 10:05:44 - IVAN APARECIDO AUGUSTINELI (Anotações de trabalho)
+Violação de PK - OBSERVAÇÃO: a pasta contém dois arquivos, e isso pode gerar este problema. O correto é processar um arquivo por vez.
+
+31/03/2026 01:21:52 - System (Anotações de trabalho)
+Task is created by System Administrator , using  ""[code]<u><a href=""em_alert_management_rule.do?sys_id=45f74e2a8786f5544340c9530cbb3541"" target=""_blank"">BRAD - Correlation - Auto Incident - IWS</a></u>[/code]"" Alert Rule.
+
+","system","Em andamento","IWS Processamento","2 - Alto(a)","Processamento","DS - BS - SUSTENTACAO - BVP - SISE-SP","ANDRE ANDRADE ALEXANDRE ROCHA","31/03/2026 20:05:10","G570640","","AguardaAnalistaVIDA, SISTRAN, SitEmAtendimento","f320570c8784c71c160e0d440cbb35b2"
+"INC1409265","Divergência de valores e data referente aos pagamentos de resgates nos sistemas SISE-SP, PEGA e Relatório Oficial.","","12/03/2026 13:27:02","31/03/2026 13:28:19 - IVAN APARECIDO AUGUSTINELI (Anotações de trabalho)
+Procedures foram ajustadas para pegar os valores corretamente.
+Aguardando janela para implantação.
+
+13/03/2026 16:11:36 - IVAN APARECIDO AUGUSTINELI (Anotações de trabalho)
+Em atendimento por HELTON SILVA DA CRUZ (SISTRAN) em 13/03/2026 16:00:00
+
+13/03/2026 14:46:11 - DIOGO DA FRANCA RODRIGUES (Anotações de trabalho)
+Procedure PEGA: pMassfConsJorndResgt
+
+","F626378","Em andamento","PAULUS MAGNUS LUIZ DE OLIVEIRA","4 - Baixo(a)","Bradesco Seguros - Sustentação","DS - BS - SUSTENTACAO - BVP - SISE-SP","DIOGO DA FRANCA RODRIGUES","31/03/2026 13:28:19","M69257","","AguardaImplantacao, Prioridade 1, Resgate, SISTRAN, SitEmAtendimento","d57dff0e4723fadcd782d940f26d43f4"
