@@ -1,0 +1,57 @@
+# Contexto do Projeto: Gerenciador de Atendimentos de Sustentação
+
+Você é um Analista Desenvolvedor Sênior. O objetivo é construir uma aplicação web de suporte técnica utilizando Python, MongoDB e Nginx, rodando estritamente em Docker.
+
+## 1. Diretrizes de Arquitetura
+- **Stack:** Python (FastAPI para performance/lean), MongoDB (Banco NoSQL), Nginx (Proxy Reverso).
+- **Isolamento:** NADA deve ser instalado no host. Tudo (Python, dependências, banco) deve rodar via Docker Compose.
+- **Minimalismo:** Evite bibliotecas pesadas. Use `FastAPI` + `Motor` (driver assíncrono para MongoDB) para manter o ambiente leve.
+
+### Leiaute de Diretórios
+.
+├── .cursorrules          # Regras de contexto para a IA
+├── docker-compose.yml    # Orquestração (Nginx, App, MongoDB)
+├── app/
+│   ├── main.py           # FastAPI (Mais leve que Django/Flask p/ MongoDB)
+│   ├── database.py       # Conexão Motor (Async MongoDB)
+│   ├── models.py         # Pydantic schemas baseados na tabela
+│   └── requirements.txt  # Dependências (fastapi, uvicorn, motor)
+├── nginx/
+│   └── default.conf      # Configuração do Proxy Reverso
+├── static/
+│   └── index.html        # Nova Interface Moderna
+├── docker-compose.yml
+└── .env                  # Variáveis de ambiente
+
+
+## 2. Esquema de Dados (Tabela de Atendimentos)
+Os modelos Pydantic e documentos MongoDB devem seguir rigorosamente esta estrutura:
+- `atenNumero`: (string/int) ID interno.
+- `atenNumeroCliente`: (string) ID principal no cliente.
+- `atenNumeroSecundario`: (string) Tarefa ou atendimento original.
+- `atenAssunto`: (string) Descrição resumida.
+- `atenDescricao`: (string) Texto completo.
+- `atenDataAbertura`: (datetime) Abertura no cliente.
+- `atenDataRecepcao`: (datetime) Chegada para análise.
+- `atenAnalistaCliente`: (string) Responsável no cliente.
+- `atenAnalistaInterno`: (string) Responsável interno.
+- `atenCausa`: (string) Causa raiz.
+- `atenSolucao`: (string) Resolução.
+- `atenObservacao`: (string) Notas adicionais.
+- `atenTipo`: Enum (INC, PRB, RITM, SCTASK).
+
+## 3. Configuração Docker (Docker-only policy)
+- O `Dockerfile` da aplicação deve usar uma imagem `python:3.11-slim` ou `alpine`.
+- O `docker-compose.yml` deve conter três serviços:
+  1. `db`: MongoDB com volume persistente.
+  2. `app`: FastAPI rodando com Uvicorn.
+  3. `web`: Nginx servindo como porta de entrada (proxy_pass para o app).
+
+## 4. Comandos Permitidos
+- Utilize `docker-compose up --build` para refletir mudanças.
+- Use `docker-compose exec app pip install ...` apenas se necessário atualizar o `requirements.txt`.
+
+## 5. Padrões de Código
+- Código em Python deve ser assíncrono (`async/await`).
+- Nomes de variáveis seguem o padrão definido na tabela (camelCase ou snake_case conforme convenção, mas mantendo o prefixo `aten`).
+- Respostas da API devem ser JSON estruturado.
