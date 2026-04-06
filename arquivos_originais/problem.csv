@@ -1,44 +1,14 @@
-"number","short_description","opened_at","state","assigned_to","assignment_group","description","cmdb_ci","sys_tags","priority"
-"PRB0069243","SISE - AE - ENVIO CREDOR VIDA","23/03/2026 15:04:34","Análise de causa raiz","JOAO VITOR ALTOMAR","DS - BS - SUSTENTACAO - BVP - SISE-SP","ANALISE DE SEGURADOS / APOLICES QUE NÃO ESTÃO ENVIANDO A INFORMAÇÃO DE CREDOR AO VIDA.","SISED000","PriorAtend0, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
-"PRB0068407","Falha dos dados de cliente indevidamente no APP BSC","25/02/2026 14:10:22","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","Identificado falha na unicidade ao obter dados de cliente por meio do APP BSC ao levantar apólices por meio do CPF. 
-No problema deve ser avaliado:
-1 - Avaliar a utilização no acesso as tabelas por meio de chave única ou composta das apólice de faturamento de apólices empresariais. 
-2 - Levantar programas que podem estar sendo utilizadas sem a utilização de chave complementar. 
-3 - Levantar possíveis apólice com concorrência de numeração de chaves. ","SISE-ApoliceVida","AguardaAnalistaVIDA, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
-"PRB0066006","QE382 - 6866","25/11/2025 11:00:14","Análise de causa raiz","ANDRE ANDRADE ALEXANDRE ROCHA","DS - BS - SUSTENTACAO - BVP - SISE-SP","O cancelamento esta saindo em ramo divergente no QE","SISED000","AguardaAnalistaVIDA, Atuarial, PriorAtend3, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
-"PRB0069274","ABEND PP_SISE1005_D","24/03/2026 09:24:07","Análise de causa raiz","JOAO VITOR ALTOMAR","DS - BS - SUSTENTACAO - BVP - SISE-SP","Chave duplicada na APL_VIDA_AE_BENEF, ocasionando erro na execução do job 1005.","PP_SISE1005_D","SISTRAN, SitEmAtendimento","2 - Alto(a)"
-"PRB0068967","Seguros prestamista sem recuperação no cancelamento. ","13/03/2026 15:03:05","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","Seguros prestamista sem recuperação no cancelamento. Necessário levantar apólices que tiveram emissão a partir do aumento do percentual para pagamento de corretor Bradescor em  17/11/2025, com cancelamento e estorno onde não ocorreu recuperação. ","D5310S018.corp.bradesco.com.br","Comissao, SISTRAN","4 - Baixo(a)"
-"PRB0069054","ESTEIRA AUTOMÁTICA NÃO ESTÁ REGISTRANDO AS ALTERAÇÕES REALIZADA NO AVISO NA ABA HISTORICO DE SINISTRO","17/03/2026 08:44:43","Análise de causa raiz","ELTON EIDT","DS - BS - SUSTENTACAO - BVP - SISE-SP","ESTEIRA AUTOMÁTICA NÃO ESTÁ REGISTRANDO AS ALTERAÇÕES REALIZADAS DE FORMA MANUAL NO AVISO, NA ABA HISTORICO DE SINISTRO.","SISE-SinistroRegulacao","PriorAtend2, SinistroNegocio, SISTRAN","4 - Baixo(a)"
-"PRB0064019","Falta de geração de cobrança para scania. ","16/09/2025 20:52:04","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","PARA PARCERIA DA SCANIA NÃO HOUVE A GERAÇÃO DE PARCELAS PARA O CLIENTE O QUE ESTA CAUSANDO BAU FINANCEIRO, UMA VEZ QUE HÁ O REPASSE DO VALOR MAIS NÃO TEMOS A PARCELA PARA BAIXAR.
-
-","SISED000","AguardaAnalistaVIDA, Prestamista, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
-"PRB0069017","SISE - AE - VIDA - (Código CPD Vida)","16/03/2026 11:15:42","Análise de causa raiz","BARBARA PENALVA MONTEIRO","DS - BS - SUSTENTACAO - BVP - SISE-SP","ATUALMENTE A ROTINA ENVIA O CPD COM BASE NA ESTRUTURA COMERCIAL, PEGANDO O MAX ID DO CORRETOR.
-É NECESSARIO ALTERAR O ENVIO DESTE CAMPO PARA O APOLICE ESPECIFICA, FAZENDO A ROTINA EXTRAIR A INFORMAÇÃO DA REGRA CADASTRADA NO SUBESTIPULANTE.","SISED000","AguardaImplantacao, ApoliceEspecifica, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
-"PRB0068989","Apólices canceladas/expiradas sendo apresentadas na PMBAC. ","13/03/2026 20:01:51","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","Apólices canceladas/expiradas sendo apresentadas na PMBAC.  
-Identificado multiproteção expirado e presente na PMBAC, necessário identificar demais apólices na mesma situação. 
-Levantado que a apólice da evidencia não consta na tabela tCtrlCertfCanctReatv, utilizada para controle de cancelamento e reativação  e base para o processo de provisão da PVR. ","D5310S018.corp.bradesco.com.br","Atuarial, PriorAtend2, SISTRAN","4 - Baixo(a)"
-"PRB0068957","Identificado que apólices do produto da Scania tiveram aumento de capital maior do que a variação do índice. ","13/03/2026 10:52:54","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","Identificado que apólices do produto da Scania tiveram aumento de capital maior do que a variação do índice.
-Foi levantado que o processo de faturamento do produto já contempla o reajuste de capital, e dessa forma os produtos deste processo deveriam ser desconsiderados no processo habitual de apólices massificados. 
-
-Procedures:
-
-pMassfExecutaDemaisCobrancas.sql
-Up_Mas_Reenquadramento_Reajuste.sql
-","PP_SISE1016_D","SISTRAN, SitEmAtendimento","4 - Baixo(a)"
-"PRB0065581","PROPOSTA RESTITUIDA COM PAGAMENTO DE RESGATE","11/11/2025 08:24:21","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","após restituição total de prêmios, a provisão/reserva não está sendo zerada.","SISED000","AguardaAnalistaVIDA, Resgate, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
-"PRB0064629","erro ao enviar registro de cosseguro ao sap ","08/10/2025 10:31:27","Correção em andamento","ANDRE ANDRADE ALEXANDRE ROCHA","DS - BS - SUSTENTACAO - BVP - SISE-SP","ao enviar o movimento 58 esta ocorrendo erro devido não aplicar o fator da ppng para registro de cosseguro","SISED000","AguardaAnalistaVIDA, RegistrosOficiais, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
-"PRB0069090","ERRO PARA ABRIR COMUNICADO PORTAL INSTITUCIONAL","18/03/2026 08:09:08","Análise de causa raiz","ELTON EIDT","DS - BS - SUSTENTACAO - BVP - SISE-SP","ERRO PARA ABRIR COMUNICADO PORTAL INSTITUCIONAL","sise-bff-comunicado-sinistro","PriorAtend1, SinistroNegocio, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
-"PRB0068122","Erro ao salvar a proposta de seguro na BVP.","13/02/2026 10:07:17","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","Endpiont de recebimento de proposta está retornando status code 200 com campo numero da proposta null.
-
-Path do endpoint aonde ocorreu o erro: /SISE-ApoliceVida/api/v2/parceiras/35/produtos/1172/recebimento
-
-Dados usados no envio da proposta:
- 
-Data e hora do erro:  13/01/2026 - 10:32:50
-CNPJ do Corban: 32392407000106
-CPF do cliente: 89230477591
-Nome do cliente: MARIA CATARINA DA CONCEICAO
-
-
-
-","kbnt-bff-in-segurodevida","AguardaAnalistaVIDA, SISTRAN","4 - Baixo(a)"
+"number","short_description","opened_at","state","assigned_to","assignment_group","cmdb_ci","sys_tags","priority"
+"PRB0069243","SISE - AE - ENVIO CREDOR VIDA","23/03/2026 15:04:34","Análise de causa raiz","JOAO VITOR ALTOMAR","DS - BS - SUSTENTACAO - BVP - SISE-SP","SISED000","PriorAtend0, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
+"PRB0068407","Falha dos dados de cliente indevidamente no APP BSC","25/02/2026 14:10:22","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","SISE-ApoliceVida","AguardaAnalistaVIDA, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
+"PRB0066006","QE382 - 6866","25/11/2025 11:00:14","Análise de causa raiz","ANDRE ANDRADE ALEXANDRE ROCHA","DS - BS - SUSTENTACAO - BVP - SISE-SP","SISED000","AguardaAnalistaVIDA, Atuarial, PriorAtend3, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
+"PRB0068967","Seguros prestamista sem recuperação no cancelamento. ","13/03/2026 15:03:05","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","D5310S018.corp.bradesco.com.br","Comissao, SISTRAN","4 - Baixo(a)"
+"PRB0069054","ESTEIRA AUTOMÁTICA NÃO ESTÁ REGISTRANDO AS ALTERAÇÕES REALIZADA NO AVISO NA ABA HISTORICO DE SINISTRO","17/03/2026 08:44:43","Análise de causa raiz","ELTON EIDT","DS - BS - SUSTENTACAO - BVP - SISE-SP","SISE-SinistroRegulacao","PriorAtend2, SinistroNegocio, SISTRAN","4 - Baixo(a)"
+"PRB0064019","Falta de geração de cobrança para scania. ","16/09/2025 20:52:04","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","SISED000","AguardaAnalistaVIDA, Prestamista, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
+"PRB0069017","SISE - AE - VIDA - (Código CPD Vida)","16/03/2026 11:15:42","Análise de causa raiz","BARBARA PENALVA MONTEIRO","DS - BS - SUSTENTACAO - BVP - SISE-SP","SISED000","AguardaImplantacao, ApoliceEspecifica, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
+"PRB0068989","Apólices canceladas/expiradas sendo apresentadas na PMBAC. ","13/03/2026 20:01:51","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","D5310S018.corp.bradesco.com.br","Atuarial, PriorAtend2, SISTRAN","4 - Baixo(a)"
+"PRB0068957","Identificado que apólices do produto da Scania tiveram aumento de capital maior do que a variação do índice. ","13/03/2026 10:52:54","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","PP_SISE1016_D","SISTRAN, SitEmAtendimento","4 - Baixo(a)"
+"PRB0065581","PROPOSTA RESTITUIDA COM PAGAMENTO DE RESGATE","11/11/2025 08:24:21","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","SISED000","AguardaAnalistaVIDA, Resgate, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
+"PRB0064629","erro ao enviar registro de cosseguro ao sap ","08/10/2025 10:31:27","Correção em andamento","ANDRE ANDRADE ALEXANDRE ROCHA","DS - BS - SUSTENTACAO - BVP - SISE-SP","SISED000","AguardaAnalistaVIDA, RegistrosOficiais, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
+"PRB0069090","ERRO PARA ABRIR COMUNICADO PORTAL INSTITUCIONAL","18/03/2026 08:09:08","Análise de causa raiz","ELTON EIDT","DS - BS - SUSTENTACAO - BVP - SISE-SP","sise-bff-comunicado-sinistro","PriorAtend1, SinistroNegocio, SISTRAN, SitEmAtendimento","4 - Baixo(a)"
+"PRB0068122","Erro ao salvar a proposta de seguro na BVP.","13/02/2026 10:07:17","Análise de causa raiz","DIOGO DA FRANCA RODRIGUES","DS - BS - SUSTENTACAO - BVP - SISE-SP","kbnt-bff-in-segurodevida","AguardaAnalistaVIDA, SISTRAN","4 - Baixo(a)"
